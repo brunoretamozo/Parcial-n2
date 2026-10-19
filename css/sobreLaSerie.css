@@ -19,12 +19,53 @@ h3{
 }
 
 p{
-        margin: 1vw 20vw 1vw 20vw;
+        margin: auto;
 }
 
-.navProlijo{
+a{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
+    text-decoration: none;
+}
+
+.navFijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29 66 89 / 0.95);
+}
+
+.caratula{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.cuadros{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+
+}
+
+.itemFlex{
+    width: 40%;
+}
+
+.cajaProduc{
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 10%;
+}
+
+.CPG{
+    width: 30%;
 }
