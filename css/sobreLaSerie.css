@@ -45,7 +45,7 @@ a{
 .caratula{
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 100px;
 }
 
 .cuadros{
@@ -68,4 +68,39 @@ a{
 
 .CPG{
     width: 30%;
+}
+
+.logoAInicio{
+    border: none;
+
+}
+.hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #28972e, hsl(145, 97%, 15%));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
 }
