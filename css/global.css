@@ -5,11 +5,8 @@ body {
 }
 
 a {
-    border: solid hsl(209, 30%, 67%);
-    border-radius: 5px;
-    background-color: #1D4259;
     padding: 5px;
-    margin: 5px;
+    margin-left: 35px;
     color: #F2F1E4;
 }
 
@@ -61,7 +58,7 @@ article {
 }
 
 .imagen {
-    border: solid hsl(209, 30%, 67%);
+    border: solid hsl(209, 50%, 27%);
 }
 
 .vueltaAInicio {
