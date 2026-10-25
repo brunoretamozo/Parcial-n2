@@ -12,13 +12,15 @@ a {
     font-style: normal;
     font-size: xx-large;
     text-decoration: none;
+    padding: 5px 15px;
     background-color: rgb(29 66 89 / 0.6);
 }
 
 .navegador{
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 25px
+    ;
 }
 .hover-underline {
   font-size: 2rem;

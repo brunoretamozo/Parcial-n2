@@ -13,16 +13,31 @@ h2 {
     text-align: center;
 }
 
-#navegador3{
-    margin: 0;
-}
-
-.navProlijo{
+a{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
+    text-decoration: none;
 }
+
+#navegador3{
+    margin: 0;
+}
+
+.navFijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29 66 89 / 0.95);
+    z-index: 2;
+}
+
 
 .card {
   width: 400px;
@@ -30,6 +45,7 @@ h2 {
   margin: 1rem auto;
   perspective: 1000px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .card-inner {
@@ -65,4 +81,39 @@ h2 {
   background: #8b5cf6;
   color: white;
   transform: rotateY(180deg);
+}
+
+.logoAInicio{
+    border: none;
+
+}
+.hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #28972e, hsl(145, 97%, 15%));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
 }
