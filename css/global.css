@@ -52,6 +52,18 @@ p {
 }
 
 
+.navFijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29 66 89 / 0.95);
+    z-index: 2;
+}
 
 article {
     text-align: center;
@@ -59,14 +71,6 @@ article {
 
 .imagen {
     border: solid hsl(209, 50%, 27%);
-}
-
-.vueltaAInicio {
-    border: inset hsl(209, 30%, 67%);
-    background-color: hwb(113 0% 43%);
-    margin: 20vw auto;
-    padding: 2vw;
-    text-align: center;
 }
 
 #fondoCompleto {
@@ -80,4 +84,47 @@ article {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #28972e, hsl(145, 97%, 15%));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
