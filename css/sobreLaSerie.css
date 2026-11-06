@@ -42,26 +42,21 @@ figcaption{
 
 .cuadros{
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
 }
 
-.itemFlex{
-    margin: 10 20 10 20;
-    width: 40%;
+.info{
+    margin: 2%;
+    padding: 2% 5%;
     flex: 1 1 450px;
-}
-
-.cajaProduc{
-    display: flex;
-    justify-content: space-between;
-    margin-block-end: 10%;
-}
-
-.CPG{
-    width: 30%;
+    p{
+        margin: 0;
+        text-align: center;
+    }
+    h2{
+        margin: 2%;
+    }
 }
 
 .logoAInicio{
