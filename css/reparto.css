@@ -50,6 +50,7 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    h2{padding: 2% 20%;}
 }
 
 .card2 {
@@ -60,6 +61,7 @@ h2 {
     display: flex;
     flex-flow: row-reverse;
     justify-content: space-between;
+    h2{padding: 2% 20%;}
 }
 
 .tarjPj {

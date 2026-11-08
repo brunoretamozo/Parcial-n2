@@ -55,6 +55,10 @@ p {
     text-align: left;
 }
 
+.seleccionado{
+    background-color: rgb(14, 34, 46);
+    color: #5B89A6;
+}
 
 .navFijo {
     position: fixed;
