@@ -1,0 +1,45 @@
+#bodyError{
+    background-color: #04111B;
+}
+
+main {
+    margin: 0;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+    background-color: #04111B;
+    border:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 55px;
+    }
+    p{
+    background-color: #04111B;
+    margin: 0%;
+    }
+    .hover-underline{
+        margin: 2%;
+        padding: 1%;
+        border: solid rgb(29 66 89 / 0.6);
+        border-radius: 5px;
+    }
+}
+
+a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: rgb(29 66 89 / 0.6);
+}
+
+.logoInicial {
+    animation: aparecer 3s ease-out forwards;
+}
