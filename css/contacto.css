@@ -1,37 +1,36 @@
-        h1{
-    padding: 1%;
+main {
+    display: flex;
+    justify-content: baseline;
 }
 
-a{
+.formulario {
+    border: solid #65BCE8;
+    border-radius: 30px;
+    background-color: rgba(18, 41, 54, 0.95);
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 10% auto;
+    padding: 2% 1%;
+}
+
+.lineaVerde{
+    width: 70%;
+    height: 3px;
+    background-color: hsl(123, 60%, 33%);
+    box-shadow: 0 0 5px rgba(101, 188, 232, 0.3);
+}
+
+.formulario .title{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0%;
+}
+
+.formulario .title h2{
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    background-color: none;
-    padding: 5px;
-    margin: 5px;
-    color: #F2F1E4;
-}
-
-section{
-    background-color:#F2F1E4 ;
-    color: #1D4259;
-    margin: 0 35%;
-}
-
-/* .articuloMain{
-    margin: 5% 25%;
-    background-color: #F2F1E4;
-} */
-
-.navProlijo{
-    border: solid hsl(209, 30%, 67%);
-    border-radius: 5px;
-    background-color:  #1D4259;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: xx-large;
-}
-
-#idContacto{
-    margin: 2%;
+    padding: auto;
+    margin: 0%;
 }

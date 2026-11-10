@@ -30,3 +30,10 @@ a {
 .aparicion2{
     animation: aparecer 4s ease-out forwards;
 }
+
+#fondoInicio{
+    background-image: url(../img/Hombres\ bajo\ la\ lluvia\ junto\ al\ Falcon.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
