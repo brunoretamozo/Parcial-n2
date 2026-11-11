@@ -19,8 +19,18 @@ a {
 .navegador{
     display: flex;
     justify-content: center;
-    gap: 25px
-    ;
+    gap: 25px;
+    a{
+        flex-shrink: 0;
+    }
+
+    a:hover{
+        transform: scale(1.1);   
+    }
+
+    .seleccionado:hover{
+            transform: scale(1.0);
+        }
 }
 
 .logoInicial {
