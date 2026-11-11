@@ -34,11 +34,11 @@ a {
 }
 
 .logoInicial {
-    animation: aparecer 2s ease-out forwards;
+    animation: aparecer 6s ease-out forwards;
 }
 
 .aparicion2{
-    animation: aparecer 4s ease-out forwards;
+    animation: aparecer 6s ease-out forwards;
 }
 
 #fondoInicio{
@@ -46,4 +46,8 @@ a {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+iframe{
+    margin-top: 20%;
 }

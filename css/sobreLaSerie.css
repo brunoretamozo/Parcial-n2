@@ -37,7 +37,7 @@ figcaption{
 .caratula{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin: 6% 0% 8%
 }
 
 .cuadros{
