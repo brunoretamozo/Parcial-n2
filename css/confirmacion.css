@@ -1,0 +1,60 @@
+.cajaConf {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+
+    background-color: rgba(18, 41, 54);
+    border: solid #65BCE8;
+    border-radius: 30px;
+
+    margin: 10% 25%;
+    padding: 3%;
+
+    p {
+        background-color: transparent;
+        border: none;
+        margin: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        margin: 5% 10%;
+        text-align: center;
+        width: 80%;
+        border: solid #65BCE8;
+        border-radius: 30px;
+    }
+
+    a:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+.cabezaConf {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+
+    h2 {
+        background-color: transparent;
+        border: none;
+
+        width: 100%;
+        margin: 0%;
+        margin-top: 4%;
+    }
+
+    h3 {
+        background-color: transparent;
+        color: #65BCE8;
+        border: none;
+        margin: 10% 0%;
+        padding: 0%;
+    }
+}

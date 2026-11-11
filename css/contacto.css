@@ -12,25 +12,98 @@ main {
 
 
     margin: 10% auto;
-    padding: 2% 1%;
+    padding: 0% 1.5%;
 }
 
 .lineaVerde{
-    width: 70%;
+    min-width: 40%;
     height: 3px;
-    background-color: hsl(123, 60%, 33%);
+    margin-top: 4%;
+    background-color: #228727;
     box-shadow: 0 0 5px rgba(101, 188, 232, 0.3);
 }
 
 .formulario .title{
     display: flex;
     justify-content: space-between;
-    margin: 5% 0%;
+    margin: 3% 0%;
 }
 
 .formulario .title h2{
     background-color: transparent;
+    width: 60%;
+    text-align: left;
+    font-size: 40px;
     border: none;
-    padding: auto;
+    padding: 0%;
     margin: 0%;
+}
+
+.agrupacionDatos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.datos{
+    flex: 1 1 40%;
+}
+
+.datos label{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+.datos input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+}
+
+.datos select{  
+    padding: 1%;
+    width: 100%;
+}
+
+.botones{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.botones button{
+    padding: 3%;
+    color: #F2F1E4;
+    background-color: #1d4259;
+    border: solid #65BCE8;
+    border-radius: 18px;
+    font-size: large;
+}
+
+#enviar{
+    background-color: #165819;
+    border: solid #228727;
+    box-shadow: 0 0 5px rgba(101, 188, 232, 0.3);
+}
+
+#reinicio:hover{
+    transform: scale(1.1);
+}
+
+#enviar:hover{
+  transform: scale(1.1);
+}
+
+#asunto{
+    width: 100%;
+    height: 20px;
+    resize: none;
+}
+
+#msj{
+    width: 100%;
+    height: 60px;
+    resize: none;
 }

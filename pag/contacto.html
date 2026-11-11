@@ -38,19 +38,33 @@
                 <div class="lineaVerde"></div>
             </div>
 
-            <div class="datos">
-                <label> Nombre y Apellido*
-                    <input type="text" required placeholder="¿Cómo te llamas?">
-                </label>
-                <label> Email
-                    <input type="email" placeholder="Ejemplo@gmail.com">
-                </label>
-                <label> Teléfono*
-                    <input type="number" required placeholder="Solo numeros (Sin carácteres especiales ni espacios)">
-                </label>
-                <label> Edad
-                    <input type="number" min="0" max="120" placeholder="Ingresá tu edad">
-                </label>
+            <div class="agrupacionDatos">
+
+                <div class="datos">
+                    <label> Nombre y Apellido*
+                        <input type="text" required placeholder="¿Cómo te llamas?">
+                    </label>
+                </div>
+
+                <div class="datos">
+                    <label> Email
+                        <input type="email" required placeholder="Ejemplo@gmail.com">
+                    </label>
+                </div>
+
+                <div class="datos">
+                    <label> Teléfono*
+                        <input type="number" required
+                            placeholder="Solo numeros (Sin carácteres especiales ni espacios)">
+                    </label>
+                </div>
+
+                <div class="datos">
+                    <label> Edad
+                        <input type="number" min="0" max="120" placeholder="Ingresá tu edad">
+                    </label>
+                </div>
+
             </div>
 
             <div class="title">
@@ -59,7 +73,7 @@
             </div>
 
             <div class="datos">
-                <select name="" id="">
+                <select name="" id="" required>
                     <option value="" selected disabled>Seleccioná tu opción</option>
                     <option value="C">Consulta</option>
                     <option value="P">Propuesta</option>
@@ -75,15 +89,17 @@
 
             <div class="datos">
                 <label>Asunto
-                    <textarea name="" placeholder="Resumí brevemente tu mensaje" id=""></textarea>
+                    <textarea name="" placeholder="Resumí brevemente tu mensaje" id="asunto"></textarea>
                 </label>
                 <label>Mensaje
-                    <textarea name="" placeholder="Contanos los detalles de tu mensaje" id=""></textarea>
+                    <textarea name="" placeholder="Contanos los detalles de tu mensaje" id="msj" required></textarea>
                 </label>
             </div>
 
-            <button type="reset">Reiniciar</button>
-            <button type="submit">Enviar</button>
+            <div class="botones">
+                <button type="reset" id="reinicio">Reiniciar</button>
+                <button type="submit" id="enviar">Enviar mensaje</button>
+            </div>
         </form>
         <!-- <form action="./confirmacion.html" method="get">
             <label for=""> Ingrese su nombre
@@ -105,5 +121,14 @@
         </form> -->
     </main>
 </body>
+
+<footer class="footer">
+    <div class="vueltaAInicio">
+        <a href="./reparto.html">INICIO</a>
+    </div>
+    <div>
+        <a href="./curiosidades.html"><img src="../img/anterior.png" alt=""></a>
+    </div>
+</footer>
 
 </html>
